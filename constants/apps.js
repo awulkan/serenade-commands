@@ -1,3 +1,7 @@
-exports.DISCORD = "discord";
-exports.VS_CODE = "vscode";
-exports.UNITY = "unity";
+const APP = {
+DISCORD: "discord",
+VS_CODE: "vscode",
+UNITY: "unity",
+};
+
+module.exports = APP;
