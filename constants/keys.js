@@ -27,6 +27,6 @@ const KEY = {
   F10: "f10",
   F11: "f11",
   F12: "f12",
-}
+};
 
 module.exports = KEY;
