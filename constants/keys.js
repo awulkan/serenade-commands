@@ -7,8 +7,8 @@ const KEY = {
   ALT: "alt",
   SPACE: "space",
   TAB: "tab",
-  ESC: "escape",
-  DEL: "delete",
+  ESCAPE: "escape",
+  DELETE: "delete",
 
   UP: "up",
   DOWN: "down",

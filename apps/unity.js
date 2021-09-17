@@ -42,5 +42,5 @@ serenade.app(APP.UNITY).key("duplicate", "d", [KEY.CONTROL]);
 serenade.app(APP.UNITY).key("find", "f", [KEY.CONTROL]);
 serenade.app(APP.UNITY).key("select all", "a", [KEY.CONTROL]);
 serenade.app(APP.UNITY).key("refresh", "r", [KEY.CONTROL]);
-serenade.app(APP.UNITY).key("delete", KEY.DEL, [KEY.SHIFT]);
+serenade.app(APP.UNITY).key("delete", KEY.DELETE, [KEY.SHIFT]);
 serenade.app(APP.UNITY).key("center selection", "f");

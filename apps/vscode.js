@@ -44,7 +44,7 @@ serenade.app(APP.VS_CODE).key("show options", KEY.SPACE, [KEY.CONTROL]);
 serenade.app(APP.VS_CODE).key("show problem", KEY.F8, [KEY.ALT]);
 
 // Peek problems. Just another option to press escape.
-serenade.app(APP.VS_CODE).key("hide problem", KEY.ESC);
+serenade.app(APP.VS_CODE).key("hide problem", KEY.ESCAPE);
 
 // Close all tabs.
 serenade.app(APP.VS_CODE).command(
