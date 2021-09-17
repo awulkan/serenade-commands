@@ -1,7 +1,7 @@
 const APP = require('../constants/apps.js');
 const KEY = require('../constants/keys.js');
 
-// Plat Mode Controls
+// Play Mode Controls
 serenade.app(APP.UNITY).key("play", "p", [KEY.CONTROL]);
 serenade.app(APP.UNITY).key("stop", "p", [KEY.CONTROL]);
 serenade.app(APP.UNITY).key("pause", "p", [KEY.CONTROL, KEY.SHIFT]);
