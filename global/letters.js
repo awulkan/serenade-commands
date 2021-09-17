@@ -1,0 +1,28 @@
+const CHAINABLE = require('../constants/chaining.js');
+
+serenade.global().key("air","a", undefined, CHAINABLE);
+serenade.global().key("bat","b", undefined, CHAINABLE);
+serenade.global().key("cap","c", undefined, CHAINABLE);
+serenade.global().key("drum","d", undefined, CHAINABLE);
+serenade.global().key("each","e", undefined, CHAINABLE);
+serenade.global().key("fine","f", undefined, CHAINABLE);
+serenade.global().key("gust","g", undefined, CHAINABLE);
+serenade.global().key("harp","h", undefined, CHAINABLE);
+serenade.global().key("sit","i", undefined, CHAINABLE);
+serenade.global().key("jury","j", undefined, CHAINABLE);
+serenade.global().key("crunch","k", undefined, CHAINABLE);
+serenade.global().key("look","l", undefined, CHAINABLE);
+serenade.global().key("made","m", undefined, CHAINABLE);
+serenade.global().key("near","n", undefined, CHAINABLE);
+serenade.global().key("odd","o", undefined, CHAINABLE);
+serenade.global().key("pit","p", undefined, CHAINABLE);
+serenade.global().key("quench","q", undefined, CHAINABLE);
+serenade.global().key("red","r", undefined, CHAINABLE);
+serenade.global().key("sun","s", undefined, CHAINABLE);
+serenade.global().key("trap","t", undefined, CHAINABLE);
+serenade.global().key("urge","u", undefined, CHAINABLE);
+serenade.global().key("vest","v", undefined, CHAINABLE);
+serenade.global().key("whale","w", undefined, CHAINABLE);
+serenade.global().key("plex","x", undefined, CHAINABLE);
+serenade.global().key("yank","y", undefined, CHAINABLE);
+serenade.global().key("sip","z", undefined, CHAINABLE);

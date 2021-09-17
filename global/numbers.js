@@ -1,0 +1,10 @@
+// serenade.global().key("zero","0");
+// serenade.global().key("one","1");
+// serenade.global().key("two","2");
+// serenade.global().key("three","3");
+// serenade.global().key("four","4");
+// serenade.global().key("five","5");
+// serenade.global().key("six","6");
+// serenade.global().key("seven","7");
+// serenade.global().key("eight","8");
+// serenade.global().key("nine","9");
