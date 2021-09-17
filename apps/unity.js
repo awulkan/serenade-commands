@@ -11,7 +11,7 @@ serenade.app(APP.UNITY).key("step", "p", [KEY.CONTROL, KEY.ALT]);
 serenade.app(APP.UNITY).key("scene window", "1", [KEY.CONTROL]);
 serenade.app(APP.UNITY).key("game window", "2", [KEY.CONTROL]);
 serenade.app(APP.UNITY).key("inspector window", "3", [KEY.CONTROL]);
-serenade.app(APP.UNITY).key("hierarcht window", "4", [KEY.CONTROL]);
+serenade.app(APP.UNITY).key("hierarchy window", "4", [KEY.CONTROL]);
 serenade.app(APP.UNITY).key("project window", "5", [KEY.CONTROL]);
 serenade.app(APP.UNITY).key("animation window", "6", [KEY.CONTROL]);
 serenade.app(APP.UNITY).key("profiler window", "7", [KEY.CONTROL]);
