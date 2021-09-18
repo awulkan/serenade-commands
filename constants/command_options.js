@@ -1,8 +1,8 @@
-const CHAIN = {
+const OPT = {
   AUTO_ANY: {
     autoExecute: true,
     chainable: 'any',
   }
 };
 
-module.exports = CHAIN;
+module.exports = OPT;
