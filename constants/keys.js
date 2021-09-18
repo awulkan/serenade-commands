@@ -3,6 +3,7 @@ const KEY = {
   OPTION: "option",
   SHIFT: "shift",
   CONTROL: "control",
+  COMMAND_OR_CONTROL: "commandOrControl",
 
   ALT: "alt",
   SPACE: "space",
