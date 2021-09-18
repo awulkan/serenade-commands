@@ -1,35 +1,35 @@
-const CHAINABLE = require('../constants/chaining.js');
+const CHAIN = require('../constants/chaining.js');
 
-serenade.global().key("bang","!", undefined, CHAINABLE);
-serenade.global().key("question","?", undefined, CHAINABLE);
-serenade.global().key("period",".", undefined, CHAINABLE);
-serenade.global().key("point",".", undefined, CHAINABLE);
-serenade.global().key("dot",".", undefined, CHAINABLE);
-serenade.global().key("comma",",", undefined, CHAINABLE);
-serenade.global().key("colon",":", undefined, CHAINABLE);
-serenade.global().key("semi",";", undefined, CHAINABLE);
-serenade.global().key("greater than",">", undefined, CHAINABLE);
-serenade.global().key("less than","<", undefined, CHAINABLE);
-serenade.global().key("equals","=", undefined, CHAINABLE);
-serenade.global().key("slash","/", undefined, CHAINABLE);
-serenade.global().key("backslash","\\", undefined, CHAINABLE);
-serenade.global().key("hash","#", undefined, CHAINABLE);
-serenade.global().key("dollar","$", undefined, CHAINABLE);
-serenade.global().key("underscore","_", undefined, CHAINABLE);
-serenade.global().key("apos","'", undefined, CHAINABLE);
-serenade.global().key("apostrophe","'", undefined, CHAINABLE);
-serenade.global().key("quote","\"", undefined, CHAINABLE);
-serenade.global().key("paren","(", undefined, CHAINABLE);
-serenade.global().key("right paren",")", undefined, CHAINABLE);
-serenade.global().key("brace","{", undefined, CHAINABLE);
-serenade.global().key("right brace","}", undefined, CHAINABLE);
-serenade.global().key("bracket","[", undefined, CHAINABLE);
-serenade.global().key("right bracket","]", undefined, CHAINABLE);
+serenade.global().key("bang","!", undefined, CHAIN.AUTO_ANY);
+serenade.global().key("question","?", undefined, CHAIN.AUTO_ANY);
+serenade.global().key("period",".", undefined, CHAIN.AUTO_ANY);
+serenade.global().key("point",".", undefined, CHAIN.AUTO_ANY);
+serenade.global().key("dot",".", undefined, CHAIN.AUTO_ANY);
+serenade.global().key("comma",",", undefined, CHAIN.AUTO_ANY);
+serenade.global().key("colon",":", undefined, CHAIN.AUTO_ANY);
+serenade.global().key("semi",";", undefined, CHAIN.AUTO_ANY);
+serenade.global().key("greater than",">", undefined, CHAIN.AUTO_ANY);
+serenade.global().key("less than","<", undefined, CHAIN.AUTO_ANY);
+serenade.global().key("equals","=", undefined, CHAIN.AUTO_ANY);
+serenade.global().key("slash","/", undefined, CHAIN.AUTO_ANY);
+serenade.global().key("backslash","\\", undefined, CHAIN.AUTO_ANY);
+serenade.global().key("hash","#", undefined, CHAIN.AUTO_ANY);
+serenade.global().key("dollar","$", undefined, CHAIN.AUTO_ANY);
+serenade.global().key("underscore","_", undefined, CHAIN.AUTO_ANY);
+serenade.global().key("apos","'", undefined, CHAIN.AUTO_ANY);
+serenade.global().key("apostrophe","'", undefined, CHAIN.AUTO_ANY);
+serenade.global().key("quote","\"", undefined, CHAIN.AUTO_ANY);
+serenade.global().key("paren","(", undefined, CHAIN.AUTO_ANY);
+serenade.global().key("right paren",")", undefined, CHAIN.AUTO_ANY);
+serenade.global().key("brace","{", undefined, CHAIN.AUTO_ANY);
+serenade.global().key("right brace","}", undefined, CHAIN.AUTO_ANY);
+serenade.global().key("bracket","[", undefined, CHAIN.AUTO_ANY);
+serenade.global().key("right bracket","]", undefined, CHAIN.AUTO_ANY);
 serenade.global().command(
   "spam",
   async (api, matches) => {
     await api.typeText(", ");
   },
   undefined,
-  CHAINABLE,
+  CHAIN.AUTO_ANY,
 );

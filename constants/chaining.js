@@ -1,6 +1,8 @@
-const CHAINABLE = {
-  autoExecute: true,
-  chainable: 'any',
+const CHAIN = {
+  AUTO_ANY: {
+    autoExecute: true,
+    chainable: 'any',
+  }
 };
 
-module.exports = CHAINABLE;
+module.exports = CHAIN;
