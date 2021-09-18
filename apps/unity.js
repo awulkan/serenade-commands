@@ -36,7 +36,7 @@ serenade.app(APP.UNITY).key("create game object", "n", [KEY.CONTROL, KEY.SHIFT])
 serenade.app(APP.UNITY).key("undo", "z", [KEY.CONTROL]);
 serenade.app(APP.UNITY).key("redo", "t", [KEY.CONTROL]);
 serenade.app(APP.UNITY).key("cut", "x", [KEY.CONTROL]);
-serenade.app(APP.UNITY).key("copt", "c", [KEY.CONTROL]);
+serenade.app(APP.UNITY).key("copy", "c", [KEY.CONTROL]);
 serenade.app(APP.UNITY).key("paste", "v", [KEY.CONTROL]);
 serenade.app(APP.UNITY).key("duplicate", "d", [KEY.CONTROL]);
 serenade.app(APP.UNITY).key("find", "f", [KEY.CONTROL]);
