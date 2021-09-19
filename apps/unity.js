@@ -20,14 +20,20 @@ serenade.app(APP.UNITY).key("asset window", "9", [KEY.CONTROL]);
 serenade.app(APP.UNITY).key("console window", "0", [KEY.CONTROL]);
 
 // Tools
+serenade.app(APP.UNITY).key("view tool", "q");
 serenade.app(APP.UNITY).key("pan tool", "q");
 serenade.app(APP.UNITY).key("move tool", "w");
 serenade.app(APP.UNITY).key("rotate tool", "e");
 serenade.app(APP.UNITY).key("scale tool", "r");
 serenade.app(APP.UNITY).key("rectangle tool", "t");
-serenade.app(APP.UNITY).key("pivot tool", "z");
-serenade.app(APP.UNITY).key("pivot tool", "x");
-serenade.app(APP.UNITY).key("vertex tool", "v");
+serenade.app(APP.UNITY).key("rect tool", "t");
+serenade.app(APP.UNITY).key("transform tool", "y");
+serenade.app(APP.UNITY).key("pivot position", "z");
+serenade.app(APP.UNITY).key("pivot orientations", "x");
+
+// Overlays
+serenade.app(APP.UNITY).key("toggle overlays", "`");
+serenade.app(APP.UNITY).key("overlay menu", KEY.SPACE);
 
 // Manipulating GameObjects
 serenade.app(APP.UNITY).key("create game object", "n", [KEY.CONTROL, KEY.SHIFT]);
@@ -35,8 +41,6 @@ serenade.app(APP.UNITY).key("create game object", "n", [KEY.CONTROL, KEY.SHIFT])
 // General Functions
 serenade.app(APP.UNITY).key("undo", "z", [KEY.CONTROL]);
 serenade.app(APP.UNITY).key("redo", "t", [KEY.CONTROL]);
-serenade.app(APP.UNITY).key("cut", "x", [KEY.CONTROL]);
-serenade.app(APP.UNITY).key("copy", "c", [KEY.CONTROL]);
 serenade.app(APP.UNITY).key("paste", "v", [KEY.CONTROL]);
 serenade.app(APP.UNITY).key("duplicate", "d", [KEY.CONTROL]);
 serenade.app(APP.UNITY).key("find", "f", [KEY.CONTROL]);
