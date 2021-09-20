@@ -1,6 +1,15 @@
 const APP = require('../constants/apps.js');
 const KEY = require('../constants/keys.js');
 
+// Code navigation.
+serenade.app(APP.VS_CODE).command(
+  "slap",
+  async (api, matches) => {
+    await api.pressKey(KEY.END);
+    await api.pressKey(KEY.ENTER);
+  }
+);
+
 // Show explorer tab.
 serenade.app(APP.VS_CODE).key("show explorer", "e", [KEY.CONTROL, KEY.SHIFT]);
 serenade.app(APP.VS_CODE).key("show files", "e", [KEY.CONTROL, KEY.SHIFT]);
