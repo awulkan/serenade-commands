@@ -10,6 +10,9 @@ const KEY = {
   TAB: "tab",
   ESCAPE: "escape",
   DELETE: "delete",
+  HOME: "home",
+  END: "end",
+  ENTER: "enter",
 
   UP: "up",
   DOWN: "down",
