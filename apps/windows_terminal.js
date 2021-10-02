@@ -20,6 +20,8 @@ serenade.app(APP.WIN_TERMINAL).key("duplicate pane", "d", [KEY.ALT, KEY.SHIFT]);
 
 // Tabs
 serenade.app(APP.WIN_TERMINAL).key("new tab", "t", [KEY.CONTROL, KEY.SHIFT]);
+serenade.app(APP.WIN_TERMINAL).key("close tab", KEY.F4, [KEY.CONTROL]); // Doesn't work.
+serenade.app(APP.WIN_TERMINAL).key("close", KEY.F4, [KEY.CONTROL]); // Doesn't work.
 serenade.app(APP.WIN_TERMINAL).key("next tab", KEY.TAB, [KEY.CONTROL]);
 serenade.app(APP.WIN_TERMINAL).key("right tab", KEY.TAB, [KEY.CONTROL]);
 serenade.app(APP.WIN_TERMINAL).key("previous tab", KEY.TAB, [KEY.CONTROL, KEY.SHIFT]);
