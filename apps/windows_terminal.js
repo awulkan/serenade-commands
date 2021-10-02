@@ -1,25 +1,20 @@
 const APP = require("../constants/apps.js");
 const KEY = require("../constants/keys.js");
 
-const wordToNumber = {
-  "one": "1",
-  "two": "2",
-  "three": "3",
-  "four": "4",
-  "five": "5",
-  "six": "6",
-  "seven": "7",
-  "eight": "8",
-  "nine": "9",
-}
-
 // Panes
 serenade.app(APP.WIN_TERMINAL).key("close pane", "w", [KEY.CONTROL, KEY.SHIFT]);
 serenade.app(APP.WIN_TERMINAL).key("previous pane", KEY.LEFT, [KEY.CONTROL, KEY.ALT]);
 serenade.app(APP.WIN_TERMINAL).key("duplicate pane", "d", [KEY.ALT, KEY.SHIFT]);
+serenade.app(APP.WIN_TERMINAL).key("split pane horizontal", "-", [KEY.ALT, KEY.SHIFT]);
+serenade.app(APP.WIN_TERMINAL).key("split pane vertical", "+", [KEY.ALT, KEY.SHIFT]);
+serenade.app(APP.WIN_TERMINAL).key("resize pane right", KEY.RIGHT, [KEY.ALT, KEY.SHIFT]);
+serenade.app(APP.WIN_TERMINAL).key("resize pane left", KEY.LEFT, [KEY.ALT, KEY.SHIFT]);
+serenade.app(APP.WIN_TERMINAL).key("resize pane down", KEY.DOWN, [KEY.ALT, KEY.SHIFT]);
+serenade.app(APP.WIN_TERMINAL).key("resize pane up", KEY.UP, [KEY.ALT, KEY.SHIFT]);
 
 // Tabs
 serenade.app(APP.WIN_TERMINAL).key("new tab", "t", [KEY.CONTROL, KEY.SHIFT]);
+serenade.app(APP.WIN_TERMINAL).key("new tab dropdown", KEY.SPACE, [KEY.CONTROL, KEY.SHIFT]);
 serenade.app(APP.WIN_TERMINAL).key("close tab", KEY.F4, [KEY.CONTROL]); // Doesn't work.
 serenade.app(APP.WIN_TERMINAL).key("close", KEY.F4, [KEY.CONTROL]); // Doesn't work.
 serenade.app(APP.WIN_TERMINAL).key("next tab", KEY.TAB, [KEY.CONTROL]);
@@ -28,13 +23,11 @@ serenade.app(APP.WIN_TERMINAL).key("previous tab", KEY.TAB, [KEY.CONTROL, KEY.SH
 serenade.app(APP.WIN_TERMINAL).key("left tab", KEY.TAB, [KEY.CONTROL, KEY.SHIFT]);
 serenade.app(APP.WIN_TERMINAL).key("duplicate tab", "d", [KEY.CONTROL, KEY.SHIFT]);
 serenade.app(APP.WIN_TERMINAL).command("tab <%num%>", async (api, matches) => {
-  const num = wordToNumber[matches.num];
-  if (!num) { return; }
-  await api.pressKey(num, [KEY.CONTROL, KEY.ALT]);
+  if (!parseInt(matches.num)) { return; }
+  await api.pressKey(matches.num, [KEY.CONTROL, KEY.ALT]);
 });
 serenade.app(APP.WIN_TERMINAL).command("tab profile <%num%>", async (api, matches) => {
-  const num = wordToNumber[matches.num];
-  if (!num) { return; }
+  if (!parseInt(matches.num)) { return; }
   await api.pressKey(num, [KEY.CONTROL, KEY.SHIFT]);
 });
 
@@ -49,6 +42,11 @@ serenade.app(APP.WIN_TERMINAL).key("go bottom", KEY.END, [KEY.CONTROL, KEY.SHIFT
 // Windows
 serenade.app(APP.WIN_TERMINAL).key("new window", "n", [KEY.CONTROL, KEY.SHIFT]);
 serenade.app(APP.WIN_TERMINAL).key("close window", KEY.F4, [KEY.ALT]);
+serenade.app(APP.WIN_TERMINAL).key("quake window", "´", [KEY.WINDOWS, KEY.SHIFT]);
+
+// Settings
+serenade.app(APP.WIN_TERMINAL).key("open settings", ",", [KEY.CONTROL]);
+serenade.app(APP.WIN_TERMINAL).key("open settings file", ",", [KEY.CONTROL, KEY.SHIFT]);
 
 // Text
 serenade.app(APP.WIN_TERMINAL).key("copy text", "c", [KEY.CONTROL]);
@@ -69,5 +67,5 @@ serenade.app(APP.WIN_TERMINAL).key("move focus left", KEY.LEFT, [KEY.ALT]);
 serenade.app(APP.WIN_TERMINAL).key("move focus right", KEY.RIGHT, [KEY.ALT]);
 
 // Toggles
-serenade.app(APP.WIN_TERMINAL).key("toggle full screen", KEY.F11);
-serenade.app(APP.WIN_TERMINAL).key("toggle command palette", "p", [KEY.CTRL, KEY.SHIFT]);
+serenade.app(APP.WIN_TERMINAL).key("full screen", KEY.F11);
+serenade.app(APP.WIN_TERMINAL).key("command palette", "p", [KEY.CTRL, KEY.SHIFT]);
