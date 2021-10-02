@@ -1,29 +1,6 @@
 const APP = require('../constants/apps.js');
 const KEY = require('../constants/keys.js');
 
-// Navigation
-// const NAV = {
-//   serverUp: [],
-//   serverDown: [],
-//   channelUp: [],
-//   channelDown: [],
-//   unreadChannelUp: [],
-//   unreadChannelDown: [],
-//   unreadChannelWithMentionsUp: [],
-//   unreadChannelWithMentionsDown: [],
-//   pageHistoryForward: [],
-//   pageHistoryBackward: [],
-//   currentCall: [],
-//   toggleLastServerAndDm: [],
-//   toggleQuickSwitcher: [],
-//   createOrJoinServer: [],
-// };
-
-// const press = async (shortcut, api) => {
-//   const [key, modifiers] = shortcut;
-//   await api.pressKey(key, modifiers);
-// };
-
 serenade.app(APP.DISCORD).key("server up", KEY.UP, [KEY.CONTROL, KEY.ALT]);
 serenade.app(APP.DISCORD).key("server down", KEY.DOWN, [KEY.CONTROL, KEY.ALT]);
 serenade.app(APP.DISCORD).key("channel up", KEY.UP, [KEY.ALT]);
