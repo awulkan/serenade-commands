@@ -4,6 +4,7 @@ const KEY = {
   SHIFT: "shift",
   CONTROL: "control",
   COMMAND_OR_CONTROL: "commandOrControl",
+  WINDOWS: "windows",
 
   ALT: "alt",
   SPACE: "space",
