@@ -19,6 +19,9 @@ const KEY = {
   RIGHT: "right",
   LEFT: "left",
 
+  PAGE_UP: "pageup",
+  PAGE_DOWN: "pagedown",
+
   F1: "f1",
   F2: "f2",
   F3: "f3",
