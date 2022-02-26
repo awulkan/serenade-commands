@@ -30,6 +30,5 @@ serenade.global().command(
   async (api, matches) => {
     await api.typeText(", ");
   },
-  undefined,
   OPT.AUTO_ANY,
 );
